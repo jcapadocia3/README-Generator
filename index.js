@@ -18,7 +18,7 @@ inquirer.prompt([
     },
     {
         type: "list",
-        name: "LinkedIn",
+        name: "license",
         choices: ["MIT", "Other"],  
     },
     {
@@ -34,8 +34,28 @@ inquirer.prompt([
     
 ])
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+.then(function(answers) {
+    console.log('answers from the prompt', answers)
+
+    const createREADME = `
+        #${answers.title}
+
+        ##Description, Installation, Usage, Contributing, and Tests
+        -${answers.aboutMyApp}
+
+        ##License
+        -${answers.license}
+
+        ##Questions
+        -<a href="https://github.com/${answers.GitHub}">My GitHub Profile</a>
+        -${answers.email}
+        `
+
+    // TODO: Create a function to write README file
+    fs.writeFile('README.md', createREADME, function(err, data) {
+        console.log('err, data', err, data)
+    });
+});
 
 // TODO: Create a function to initialize app
 function init() {}
