@@ -1,11 +1,10 @@
 // TODO: Include packages needed for this application
+const generateMarkdown = require('./utils/generateMarkdown.js');
 const inquirer = require("inquirer");
 const fs = require("fs");
 
 // TODO: Create an array of questions for user input
-// const questions = [];
-
-inquirer.prompt([
+const questions = [
     {
         type: "input",
         name: "title",
@@ -13,13 +12,34 @@ inquirer.prompt([
     },
     {
         type: "input",
-        name: "aboutMyApp",
-        message: "Provide the description, installation instructions, usage information, contribution guidelines, and test instructions.",  
+        name: "description",
+        message: "Provide the description for your app.",  
+    },
+    {
+        type: "input",
+        name: "installInstruct",
+        message: "Provide the installation instructions for your app.",  
+    },
+    {
+        type: "input",
+        name: "usageInfo",
+        message: "Provide the usage information for your app.",  
+    },
+    {
+        type: "input",
+        name: "contribution",
+        message: "Provide the contribution guidelines for your app.",  
+    },
+    {
+        type: "input",
+        name: "testInstruct",
+        message: "Provide the test instructions for your app.",  
     },
     {
         type: "list",
         name: "license",
-        choices: ["MIT", "Other"],  
+        message: "Choose a lincense for your project.",  
+        choices: ["MIT", "Other", "N/A"],
     },
     {
         type: "input",
@@ -32,33 +52,26 @@ inquirer.prompt([
         message: "What is your email address?",  
     },
     
-])
+];
 
-.then(function(answers) {
-    console.log('answers from the prompt', answers)
-
-    const createREADME = `
-        #${answers.title}
-
-        ##Description, Installation, Usage, Contributing, and Tests
-        -${answers.aboutMyApp}
-
-        ##License
-        -${answers.license}
-
-        ##Questions
-        -<a href="https://github.com/${answers.GitHub}">My GitHub Profile</a>
-        -${answers.email}
-        `
-
-    // TODO: Create a function to write README file
-    fs.writeFile('README.md', createREADME, function(err, data) {
-        console.log('err, data', err, data)
+// TODO: Create a function to write README file
+function writeReadMe(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err)
+            throw err;
+        console.log("All data created in README.")
     });
-});
+};
+
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+    .then(function(answers) {
+        console.log('answers from the prompt', answers);
+        writeReadMe("README.md", generateMarkdown(answers));
+    });
+};
 
 // Function call to initialize app
 init();

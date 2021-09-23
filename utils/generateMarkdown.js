@@ -11,10 +11,35 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+function generateMarkdown(answers) {
 
-`;
-}
+  return `# ${answers.title}
+
+## Description
+-${answers.description}
+
+## Installation
+-${answers.installInstruct}
+
+## Usage
+-${answers.usageInfo}
+
+## Contributing
+-${answers.contribution}
+
+## Tests
+-${answers.testInstruct}
+
+## License
+-${answers.license}
+
+## Questions
+-<a href="https://github.com/${answers.GitHub}">My GitHub Profile</a>
+-${answers.email}`;
+};
 
 module.exports = generateMarkdown;
+
+
+
+// https://img.shields.io/github/license/jcapadocia3/README-Generator
