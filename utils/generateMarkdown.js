@@ -20,32 +20,32 @@ function generateMarkdown(answers) {
 2. [Installation](#Installation)
 3. [Usage](#Usage)
 4. [Contributing Guidelines](#Contributing-Guidelines)
-6. [Test Instructions](#Test-Instructions)
-7. [License](#License)
-8. [Questions](#Questions)
+5. [Test Instructions](#Test-Instructions)
+6. [License](#License)
+7. [Questions](#Questions)
 
 ## Description
--${answers.description}
+- ${answers.description}
 
 ## Installation
--${answers.installInstruct}
+- ${answers.installInstruct}
 
 ## Usage
--${answers.usageInfo}
+- ${answers.usageInfo}
 
 ## Contributing Guidelines
--${answers.contribution}
+- ${answers.contribution}
 
 ## Test Instructions
--${answers.testInstruct}
+- ${answers.testInstruct}
 
 ## License
--${answers.license} License
+- ${answers.license} License
 
 ## Questions
--GitHub Profile: <a href="https://github.com/${answers.GitHub}">My GitHub Profile</a>
--My Email: ${answers.email}
--***Please feel free to contact me for more information***`;
+- GitHub Profile: <a href="https://github.com/${answers.GitHub}">Click Me!</a><br>
+- My Email: ${answers.email}<br>
+***Please feel free to contact me for more information***`;
 };
 
 module.exports = generateMarkdown;
