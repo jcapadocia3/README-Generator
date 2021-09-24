@@ -39,7 +39,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "Choose a lincense for your project.",  
-        choices: ["MIT", "Other", "N/A"],
+        choices: ["MIT", "ISC", "N/A"],
     },
     {
         type: "input",
