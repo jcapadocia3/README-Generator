@@ -16,10 +16,10 @@ The purpose of this project is to allow a user to generate a professionally form
 ## Video Walkthrough
 
 - Walkthrough of how the app works via the command line
-<iframe src="https://drive.google.com/file/d/1BFZdproqGVdhB5-umuB_ZdAJNF7lqO9t/preview" width="800" height="480"></iframe><br><br>
+<iframe src="./assets/video1.webm" width="800" height="480"></iframe><br><br>
 
 - Walkthrough of what the final README.md file will look like via GitHub after a git push
-<iframe src="https://drive.google.com/file/d/1QRNPleDAtoFcy17f6zzi7tYxruhnPgta/preview" width="800" height="480"></iframe>
+<iframe src="./assets/video2.webm" width="800" height="480"></iframe>
 
 ## User Story
 ```md
