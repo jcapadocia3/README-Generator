@@ -2,13 +2,23 @@
   
 # Professional README Generator
 
+## Link to public repo on Github:
+
+https://github.com/jcapadocia3/README-Generator
+
+## Disclaimer
+
+While this specific README was generated via the code written for this project itself, some sections have been modified for this README specifically, as not all sections created via the code were necessary.
+
+Please refer to the [Video Walkthrough](#Video-Walkthrough) section of this README for the links that will show the walkthrough of the project's entire functionality and results from running the code until completion.
+
 ## Table of Contents
 1. [Description](#Description)
-1. [Video Walkthrough](#Video-Walkthroughh)
-2. [User Story](#User-Story)
-3. [Installation & Instructions](#Installation-&-Instructions)
-4. [License](#License)
-5. [Questions](#Questions)
+2. [Video Walkthrough](#Video-Walkthrough)
+3. [User Story](#User-Story)
+4. [Installation & Instructions](#Installation-&-Instructions)
+5. [License](#License)
+6. [Questions](#Questions)
 
 ## Description
 The purpose of this project is to allow a user to generate a professionally formatted README.md file for a website/app they are creating. This project will run through Node via the command line and bring the user through a series of prompts to answer. Once all prompts are completed, a README.md file will automatically be created, containing the input from the user and formatting it for immediate use without requiring further editing.
