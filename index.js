@@ -69,7 +69,7 @@ function init() {
     inquirer.prompt(questions)
     .then(function(answers) {
         console.log('answers from the prompt', answers);
-        writeReadMe("README.md", generateMarkdown(answers));
+        writeReadMe("newREADME.md", generateMarkdown(answers));
     });
 };
 
