@@ -26,10 +26,10 @@ The purpose of this project is to allow a user to generate a professionally form
 ## Video Walkthrough
 
 - Walkthrough of how the app works via the command line<br>
-<a target="_blank" href="https://watch.screencastify.com/v/4iUgoTpR8ttuQKTxteuR">Click Here!</a>
+<a target="_blank" href="https://watch.screencastify.com/v/LeW6cp70P88gwYyrJGCM">Click Here!</a>
 
 - Walkthrough of what the final README.md file will look like via GitHub after a git push<br>
-<a target="_blank" href="https://watch.screencastify.com/v/nUcSu4UxMpYHQzGzkIjj">Click Here!</a>
+<a target="_blank" href="https://watch.screencastify.com/v/vEtg3BC7DC6tGhKFwVDm">Click Here!</a>
 
 ## User Story
 ```md
