@@ -12,7 +12,7 @@ While this specific README was generated via the code written for this project i
 
 Please refer to the [Video Walkthrough](#Video-Walkthrough) section of this README for the links that will show the walkthrough of the project's entire functionality and results from running the code until completion.
 
-You can also refer to the newREADME.md file in the repo to see the final product created by the code as shown in the Video Walkthroughs.
+You can also refer to the "newREADME.md" file in the repo to see the final product created by the code as shown in the Video Walkthroughs.
 
 ## Table of Contents
 1. [Description](#Description)
