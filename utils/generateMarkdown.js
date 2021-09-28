@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function that returns a license badge based on which license is passed in via user input
 function renderLicenseBadge(license) {
   if (license === 'MIT') {
     return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
@@ -9,8 +8,7 @@ function renderLicenseBadge(license) {
     return 'No'
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function that returns the official license policy that is determine by what the user chooses from the license list in the prompts
 function renderLicenseLink(license) {
   if (license === 'MIT') {
     return `Copyright 2021
@@ -30,7 +28,7 @@ function renderLicenseLink(license) {
     return 'No license information.'
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(answers) {
 
   return `${renderLicenseBadge(answers.license)}
@@ -72,7 +70,3 @@ function generateMarkdown(answers) {
 };
 
 module.exports = generateMarkdown;
-
-
-
-// https://img.shields.io/github/license/jcapadocia3/README-Generator
